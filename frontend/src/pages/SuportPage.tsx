@@ -13,15 +13,15 @@ function SupportPage() {
           entrar em contato com <strong>Adilson Machado</strong>.
         </p>
         <p className="mt-6">
-          <strong>WhatsApp:</strong> (71) 9197-4445
+          <strong>WhatsApp:</strong> (73) 98868-0048
         </p>
         <p>
           <strong>Email:</strong>{' '}
           <a 
-            href="mailto:ag1957@gmail.com" 
+            href="mailto:adylsonmachado@hotmail.com" 
             className="text-primary hover:underline"
           >
-            ag1957@gmail.com
+            adylsonmachado@hotmail.com
           </a>
         </p>
       </div>

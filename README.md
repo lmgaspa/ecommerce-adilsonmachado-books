@@ -1,6 +1,6 @@
-📚 Ecommerce AG Books - Fullstack
+📚 Ecommerce Adilson Machado Books - Fullstack
 
-This is the fullstack service for the AG Books online store. It handles:
+This is the fullstack service for the Adilson Machado Books online store. It handles:
 
 PIX (brazilian digital payment), payment creation (QR Code) with using Efí Bank Integration API
 
@@ -25,7 +25,7 @@ Java Mail Sender
 
 Heroku (deployment)
 
-Swagger: https://ecommerceag-6fa0e6a5edbf.herokuapp.com/swagger-ui/index.html
+Swagger: 
 
 📬 Contact
 
