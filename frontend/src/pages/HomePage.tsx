@@ -18,39 +18,53 @@ function HomePage() {
 
       <h2 className="text-4xl font-extrabold text-primary mb-16 text-center">Livros</h2>
       <div className="flex flex-wrap justify-center gap-16">
-        <div onClick={() => navigate('/books/extase')}>
+        <div onClick={() => navigate('/books/amendoeiras')}>
           <ContentBlock 
-            title="Êxtase" 
-            imageUrl="/images/extase.webp" 
-            description="De birra com Jorge Amado e outras crônicas grapiúnas." 
+            title="Amendoeiras de Outono" 
+            imageUrl="/images/amendoeiras.webp" 
+            description="Romance marcante de Adilson Machado." 
           />
         </div>
-        <div onClick={() => navigate('/books/sempre')}>
+        <div onClick={() => navigate('/books/chamaoburro')}>
           <ContentBlock 
-            title="Para Sempre Felizes" 
-            imageUrl="/images/sempre.webp" 
-            description="Coisas de neto." 
+            title="Chama o burro e outras crônicas de antanho" 
+            imageUrl="/images/chamaoburro.webp" 
+            description="Crônicas de antanho cheias de memória e emoção." 
           />
         </div>
-        <div onClick={() => navigate('/books/regressantes')}>
+        <div onClick={() => navigate('/books/entrenuvensdeambar')}>
           <ContentBlock 
-            title="Regressantes" 
-            imageUrl="/images/regressantes.webp" 
-            description="Histórias de luta e resistência." 
+            title="Entre nuvens de âmbar" 
+            imageUrl="/images/entrenuvensdeambar.webp" 
+            description="O sonho tirano insiste e persegue." 
           />
         </div>
-        <div onClick={() => navigate('/books/versos')}>
+        <div onClick={() => navigate('/books/portal')}>
           <ContentBlock 
-            title="Versos desnudos: poemas em tempos tensos" 
-            imageUrl="/images/versos.webp" 
-            description="Versos desnudos: poemas em tempos tensos." 
+            title="Portal da Piedade" 
+            imageUrl="/images/portaldapiedade.webp" 
+            description="Crônicas sensíveis sobre o cotidiano e a memória." 
           />
         </div>
-        <div onClick={() => navigate('/books/versi')}>
+        <div onClick={() => navigate('/books/ocinza')}>
           <ContentBlock 
-            title="Versi spogli: poesie in tempi difficili" 
-            imageUrl="/images/versi.webp" 
-            description="Versi spogli: poesie in tempi difficili." 
+            title="O cinza e o silêncio" 
+            imageUrl="/images/ocinzaeosilencio.webp" 
+            description="Reflexões em meio ao silêncio e à saudade." 
+          />
+        </div>
+        <div onClick={() => navigate('/books/lambe')}>
+          <ContentBlock 
+            title="Lambe-lambe e outros contos" 
+            imageUrl="/images/lambe.webp" 
+            description="Contos cheios de vida e simplicidade." 
+          />
+        </div>
+        <div onClick={() => navigate('/books/abc')}>
+          <ContentBlock 
+            title="O abc do Cabôco" 
+            imageUrl="/images/oabcdocaboco.webp" 
+            description="Retrato popular e poético do cabôco brasileiro." 
           />
         </div>
       </div>

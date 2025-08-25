@@ -183,7 +183,7 @@ export const books: Book[] = [
     stock: 100,
     relatedBooks: [
       { id: "lambe", title: "Lambe-lambe e outros contos", imageUrl: "/images/lambe.webp", price: "R$25,00", category: "Contos" },
-      { id: "portal", title: "Portal da Piedade", imageUrl: "/images/portaldapiedade.webp", price: "R$30,00", category: "Crônicas" }
+      { id: "portal", title: "Portal da Piedade", imageUrl: "/images/portaldapiedade.webp", price: "R$30,00", category: "Crônica" }
     ],
   }
 ];
