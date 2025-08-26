@@ -49,18 +49,7 @@ const BookDetails = ({
       return;
     }
     addToCart(
-      {
-        id,
-        title,
-        imageUrl,
-        price,
-        description,
-        author,
-        additionalInfo,
-        category,
-        relatedBooks,
-        stock,
-      },
+      { id, title, imageUrl, price, description, author, additionalInfo, category, relatedBooks, stock },
       quantity
     );
     alert("Item adicionado ao carrinho!");
@@ -68,14 +57,10 @@ const BookDetails = ({
   };
 
   return (
-    <div className="container mx-auto my-16 px-4">
-      <div className="flex flex-col md:flex-row items-start gap-16 mb-16">
+    <div className="container mx-auto my-16 px-4 ">
+      <div className="flex flex-col md:flex-row items-start gap-16">
         <div className="w-full md:w-1/3 flex justify-center">
-          <img
-            src={imageUrl}
-            alt={title}
-            className="w-full max-w-xs rounded-md shadow-md"
-          />
+          <img src={imageUrl} alt={title} className="w-full max-w-xs rounded-md shadow-md" />
         </div>
 
         <div className="flex-1">
@@ -84,9 +69,7 @@ const BookDetails = ({
           <div className="flex items-center gap-3 mb-2">
             <p className="text-3xl text-secondary font-semibold">{price}</p>
             {!isAvailable ? (
-              <span className="px-3 py-1 text-sm bg-gray-300 text-gray-800 rounded">
-                Esgotado
-              </span>
+              <span className="px-3 py-1 text-sm bg-gray-300 text-gray-800 rounded">Esgotado</span>
             ) : lowStock ? (
               <p className="mt-1 text-red-600 font-bold">
                 ({stock}) EM ESTOQUE
@@ -98,18 +81,12 @@ const BookDetails = ({
           <BookAuthor author={author} />
 
           <div className="flex items-center gap-4 mb-8">
-            <ButtonCountCart
-              quantity={quantity}
-              onDecrease={handleDecrease}
-              onIncrease={handleIncrease}
-            />
+            <ButtonCountCart quantity={quantity} onDecrease={handleDecrease} onIncrease={handleIncrease} />
             <button
               onClick={handleAddToCart}
               disabled={!isAvailable}
               className={`px-6 py-2 rounded-md shadow-md transition ${
-                isAvailable
-                  ? "bg-green-600 text-white hover:bg-green-700"
-                  : "bg-gray-300 text-gray-600 cursor-not-allowed"
+                isAvailable ? "bg-green-600 text-white hover:bg-green-700" : "bg-gray-300 text-gray-600 cursor-not-allowed"
               }`}
             >
               {isAvailable ? "Adicionar ao Carrinho" : "Esgotado"}
