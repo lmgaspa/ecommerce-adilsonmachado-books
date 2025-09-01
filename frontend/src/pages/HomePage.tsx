@@ -8,8 +8,8 @@ function HomePage() {
   return (
     <Container>
       <ContentBlock 
-        title="Adilson Machado"
-        imageUrl="/images/adilson.webp"
+        title="Adylson Machado"
+        imageUrl="/images/adylson.webp"
         description="Adylson Lima Machado, nasceu em Monte Alegre da Bahia (atualmente Mairi).
         Reside em Itabuna. Advogado e professor, leciona Direito Municipal e Direito Financeiro
         no Curso de Ciências Jurídicas da Universidade Estadual de Santa Cruz - UESC, em Ilhéus."
@@ -22,7 +22,7 @@ function HomePage() {
           <ContentBlock 
             title="Amendoeiras de Outono" 
             imageUrl="/images/amendoeiras.webp" 
-            description="Romance marcante de Adilson Machado." 
+            description="Romance marcante de Adylson Machado." 
           />
         </div>
         <div onClick={() => navigate('/books/chamaoburro')}>

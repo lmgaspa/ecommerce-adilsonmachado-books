@@ -8,7 +8,7 @@ const Navbar = () => {
         to="/"
         className="text-2xl sm:text-3xl font-bold text-background mb-2 sm:mb-0 text-center sm:text-left"
       >
-        Adilson Machado
+        Adylson Machado
       </Link>
       <div className="flex gap-6 sm:gap-8 items-center">
         <Link

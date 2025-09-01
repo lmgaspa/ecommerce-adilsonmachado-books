@@ -13,7 +13,7 @@ export interface Book {
   stock: number;
 }
 
-const adilsonMachado = "Adilson Machado";
+const adylsonMachado = "Adylson Machado";
 const selo = "Via Litterarum";
 const idioma = "Português";
 
@@ -24,7 +24,7 @@ export const books: Book[] = [
     imageUrl: "/images/amendoeiras.webp",
     price: "R$60,00",
     description: descriptions.amendoeiras,
-    author: adilsonMachado,
+    author: adylsonMachado,
     additionalInfo: {
       Peso: "520 g",
       Dimensões: "22 × 15 × 2,5 cm",
@@ -48,7 +48,7 @@ export const books: Book[] = [
     imageUrl: "/images/chamaoburro.webp",
     price: "R$30,00",
     description: descriptions.chamaoburro,
-    author: adilsonMachado,
+    author: adylsonMachado,
     additionalInfo: {
       Peso: "135 g",
       Dimensões: "21 × 14 × 0,7 cm",
@@ -72,7 +72,7 @@ export const books: Book[] = [
     imageUrl: "/images/entrenuvensdeambar.webp",
     price: "R$25,00",
     description: descriptions.entrenuvensdeambar,
-    author: adilsonMachado,
+    author: adylsonMachado,
     additionalInfo: {
       Peso: "156 g",
       Dimensões: "21 × 14 × 0,8 cm",
@@ -96,7 +96,7 @@ export const books: Book[] = [
     imageUrl: "/images/portaldapiedade.webp",
     price: "R$30,00",
     description: descriptions.portal,
-    author: adilsonMachado,
+    author: adylsonMachado,
     additionalInfo: {
       Peso: "200 g",
       Dimensões: "21 × 14 × 1 cm",
@@ -120,7 +120,7 @@ export const books: Book[] = [
     imageUrl: "/images/ocinzaeosilencio.webp",
     price: "R$25,00",
     description: descriptions.ocinza,
-    author: adilsonMachado,
+    author: adylsonMachado,
     additionalInfo: {
       Peso: "135 g",
       Dimensões: "21 × 14 × 0,7 cm",
@@ -144,7 +144,7 @@ export const books: Book[] = [
     imageUrl: "/images/lambe.webp",
     price: "R$25,00",
     description: descriptions.lambe,
-    author: adilsonMachado,
+    author: adylsonMachado,
     additionalInfo: {
       Peso: "125 g",
       Dimensões: "21 × 14 × 0,8 cm",
@@ -168,7 +168,7 @@ export const books: Book[] = [
     imageUrl: "/images/oabcdocaboco.webp",
     price: "R$25,00",
     description: descriptions.abc,
-    author: adilsonMachado,
+    author: adylsonMachado,
     additionalInfo: {
       Peso: "135 g",
       Dimensões: "10 × 19 × 1 cm",
