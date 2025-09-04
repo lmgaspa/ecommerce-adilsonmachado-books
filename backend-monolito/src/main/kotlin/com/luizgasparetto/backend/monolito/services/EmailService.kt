@@ -21,7 +21,7 @@ class EmailService(
         val from = System.getenv("MAIL_USERNAME") ?: authorEmail
         h.setFrom(from)
         h.setTo(order.email)
-        h.setSubject("Adilson Machado – Ecommerce | Pagamento confirmado (#${order.id})")
+        h.setSubject("Adylson Machado – Ecommerce | Pagamento confirmado (#${order.id})")
         h.setText(buildHtmlMessage(order, isAuthor = false), true)
         try { mailSender.send(msg); log.info("MAIL cliente OK -> {}", order.email) }
         catch (e: Exception) { log.error("MAIL cliente ERRO: {}", e.message, e) }
@@ -33,7 +33,7 @@ class EmailService(
         val from = System.getenv("MAIL_USERNAME") ?: authorEmail
         h.setFrom(from)
         h.setTo(authorEmail)
-        h.setSubject("Novo pedido pago (#${order.id}) – Adilson Machado")
+        h.setSubject("Novo pedido pago (#${order.id}) – Adylson Machado")
         h.setText(buildHtmlMessage(order, isAuthor = true), true)
         try { mailSender.send(msg); log.info("MAIL autor OK -> {}", authorEmail) }
         catch (e: Exception) { log.error("MAIL autor ERRO: {}", e.message, e) }
@@ -101,7 +101,7 @@ class EmailService(
 
         val contactBlock = """
             <p style="margin:16px 0 0;color:#555">
-              Em caso de dúvida ou cancelamento, entre em contato com <strong>Adilson Machado</strong><br>
+              Em caso de dúvida ou cancelamento, entre em contato com <strong>Adylson Machado</strong><br>
               Email: <a href="mailto:adylsonmachado@hotmail.com">adylsonmachado@hotmail.com</a> · WhatsApp: <a href="https://wa.me/5571988680048">(73) 988680048</a>
             </p>
         """.trimIndent()
@@ -111,7 +111,7 @@ class EmailService(
         <body style="font-family:Arial,Helvetica,sans-serif;background:#f6f7f9;padding:24px">
           <div style="max-width:640px;margin:0 auto;background:#fff;border:1px solid #eee;border-radius:10px;overflow:hidden">
             <div style="background:#111;color:#fff;padding:16px 20px">
-              <strong style="font-size:16px">Adilson Machado – Ecommerce</strong>
+              <strong style="font-size:16px">Adylson Machado – Ecommerce</strong>
             </div>
             <div style="padding:20px">
               $who
@@ -135,7 +135,7 @@ class EmailService(
               $contactBlock
             </div>
             <div style="background:#fafafa;color:#888;padding:12px 20px;text-align:center;font-size:12px">
-              © ${java.time.Year.now()} Adilson Machado. Todos os direitos reservados.
+              © ${java.time.Year.now()} Adylson Machado. Todos os direitos reservados.
             </div>
           </div>
         </body>
