@@ -6,7 +6,7 @@ import { calcularFreteComBaseEmCarrinho } from "../utils/freteUtils";
 
 const API_BASE =
   import.meta.env.VITE_API_BASE ??
-  "https://ecommerce-adylson-f543f4ef7a51.herokuapp.com";
+  "https://ecommerce-adilson-f543f4ef7a51.herokuapp.com";
 
 export default function PixPaymentPage() {
   const navigate = useNavigate();
